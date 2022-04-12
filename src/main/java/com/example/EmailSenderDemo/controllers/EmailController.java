@@ -14,7 +14,7 @@ public class EmailController {
 
     private final EmailService emailService;
 
-  //  @CrossOrigin("*") // use for testing code with multiple host, but not recommended
+    @CrossOrigin("*") // use for testing code with multiple host, but not recommended
     @PostMapping
     public void insertEmail(@RequestBody Email email){
          emailService.addNewEmail(email);
