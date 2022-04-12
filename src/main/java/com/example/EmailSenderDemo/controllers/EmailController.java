@@ -10,11 +10,11 @@ import java.util.List;
 @RestController
 @RequestMapping("api/v1/email")
 @AllArgsConstructor
+@CrossOrigin("*")     // use for testing code with multiple host, but not recommended
 public class EmailController {
 
     private final EmailService emailService;
 
-    @CrossOrigin("*") // use for testing code with multiple host, but not recommended
     @PostMapping
     public void insertEmail(@RequestBody Email email){
          emailService.addNewEmail(email);
