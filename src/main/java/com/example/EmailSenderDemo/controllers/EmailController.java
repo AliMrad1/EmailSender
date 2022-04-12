@@ -10,6 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("api/v1/email")
 @AllArgsConstructor
+@CrossOrigin(origins = "*")
 public class EmailController {
 
     private final EmailService emailService;
