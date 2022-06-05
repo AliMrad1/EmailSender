@@ -18,5 +18,7 @@ Good Luck!
 
 
 Cloud side ==>
- 
-I uploaded this app to heroku cloud platform , and use postgresql database in the cloud
+* I uploaded this app to heroku cloud platform , and use postgresql database in the cloud
+
+I use SMTP protocol for  email transmission, you can find all configuration in application.properties file
+
