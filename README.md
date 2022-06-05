@@ -22,3 +22,6 @@ Cloud side ==>
 
 I use SMTP protocol for  email transmission, you can find all configuration in application.properties file
 
+Testing ==>
+* I make a unit testing for repository class 
+* test findSameEmail Method 
