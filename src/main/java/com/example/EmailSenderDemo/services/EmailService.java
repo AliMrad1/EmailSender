@@ -20,7 +20,7 @@ import java.util.Optional;
 @AllArgsConstructor
 public class EmailService implements EmailSender {
 
-    private final static Logger LOGGER = LoggerFactory.getLogger(EmailService.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(EmailService.class);
     private static final String link = "https://stick-hub.com/";
 
     private final EmailValidator emailValidator;
