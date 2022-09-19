@@ -39,5 +39,9 @@ class EmailRepositoryTest {
 
     @Test
     void getAllEmails() {
+        Iterable<Email> emails = underTest.findAll();
+        emails.forEach(System.out::println);
+
+        Assertions.assertThat(emails.iterator()).isNotNull();
     }
 }
